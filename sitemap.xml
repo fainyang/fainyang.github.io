@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://feiyang233.club/post/Onboarding/</loc>
+    
+    <lastmod>2021-06-27T01:47:58.624Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://feiyang233.club/post/hexo-blog/</loc>
     
-    <lastmod>2021-06-27T01:42:01.681Z</lastmod>
+    <lastmod>2021-06-27T01:47:41.738Z</lastmod>
     
   </url>
   
@@ -89,13 +96,6 @@
     <loc>http://feiyang233.club/post/Master/</loc>
     
     <lastmod>2021-06-20T06:55:24.140Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://feiyang233.club/post/Onboarding/</loc>
-    
-    <lastmod>2021-06-20T06:55:23.197Z</lastmod>
     
   </url>
   
