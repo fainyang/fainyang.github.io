@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://feiyang233.club/img/2019/github.png">
 <meta property="og:image" content="http://feiyang233.club/img/2019/publish.png">
 <meta property="article:published_time" content="2019-03-15T03:05:30.000Z">
-<meta property="article:modified_time" content="2021-06-27T01:47:41.738Z">
+<meta property="article:modified_time" content="2021-06-27T01:55:04.120Z">
 <meta property="article:author" content="feiyang">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2021-06-27 09:47:41" itemprop="dateModified" datetime="2021-06-27T09:47:41+08:00">2021-06-27</time>
+                <time title="Modified: 2021-06-27 09:55:04" itemprop="dateModified" datetime="2021-06-27T09:55:04+08:00">2021-06-27</time>
               
             
           </span>
@@ -545,7 +545,7 @@
 </li>
 </ul>
 <h2 id="hexo-github-改名"><a href="#hexo-github-改名" class="headerlink" title="hexo github 改名"></a>hexo github 改名</h2><ul>
-<li><p>首先需要删除文件夹 <code>.deploy_git</code></p>
+<li><p>首先需要删除文件夹 <code>.deploy_git</code> ,   需要注意的是： 删除这个文件夹后，重新部署，github 上面的 commit 记录会重新初始化。但我认为无所谓啦，我们的 blog 源文件不是这个 repo</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">➜  blog git:(main) ✗ tree . -a -L 1                                                                                                                                                     &lt;aws:default&gt;</span><br><span class="line">.</span><br><span class="line">|-- .DS_Store</span><br><span class="line">|-- .deploy_git</span><br><span class="line">|-- .git</span><br><span class="line">|-- .gitignore</span><br><span class="line">|-- .idea</span><br><span class="line">|-- .vscode</span><br><span class="line">|-- _config.yml</span><br><span class="line">|-- db.json</span><br><span class="line">|-- debug.log</span><br><span class="line">|-- node_modules</span><br><span class="line">|-- package-lock.json</span><br><span class="line">|-- package.json</span><br><span class="line">|-- public</span><br><span class="line">|-- scaffolds</span><br><span class="line">|-- source</span><br><span class="line">`-- themes</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>然后更新 <code>_config.yml</code></p>
