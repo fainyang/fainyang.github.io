@@ -126,9 +126,9 @@
       <category term="Linux" scheme="http://feiyang233.club/categories/Linux/"/>
     
     
-      <category term="mac" scheme="http://feiyang233.club/tags/mac/"/>
-    
       <category term="tools" scheme="http://feiyang233.club/tags/tools/"/>
+    
+      <category term="mac" scheme="http://feiyang233.club/tags/mac/"/>
     
       <category term="ansible" scheme="http://feiyang233.club/tags/ansible/"/>
     
@@ -222,9 +222,9 @@
       <category term="develop" scheme="http://feiyang233.club/categories/develop/"/>
     
     
-      <category term="docker" scheme="http://feiyang233.club/tags/docker/"/>
-    
       <category term="git" scheme="http://feiyang233.club/tags/git/"/>
+    
+      <category term="docker" scheme="http://feiyang233.club/tags/docker/"/>
     
       <category term="security" scheme="http://feiyang233.club/tags/security/"/>
     
