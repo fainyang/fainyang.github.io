@@ -224,9 +224,9 @@
     
       <category term="docker" scheme="http://feiyang233.club/tags/docker/"/>
     
-      <category term="git" scheme="http://feiyang233.club/tags/git/"/>
-    
       <category term="security" scheme="http://feiyang233.club/tags/security/"/>
+    
+      <category term="git" scheme="http://feiyang233.club/tags/git/"/>
     
   </entry>
   

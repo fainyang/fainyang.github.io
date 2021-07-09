@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://feiyang233.club/post/mac/</loc>
+    
+    <lastmod>2021-07-09T06:53:46.212Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://feiyang233.club/post/SG-food/</loc>
     
     <lastmod>2021-07-07T00:30:34.477Z</lastmod>
@@ -58,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://feiyang233.club/post/algo/</loc>
+    <loc>http://feiyang233.club/post/Robot/</loc>
     
     <lastmod>2021-06-27T01:13:04.231Z</lastmod>
     
@@ -72,7 +79,7 @@
   </url>
   
   <url>
-    <loc>http://feiyang233.club/post/Robot/</loc>
+    <loc>http://feiyang233.club/post/algo/</loc>
     
     <lastmod>2021-06-27T01:13:04.231Z</lastmod>
     
@@ -117,13 +124,6 @@
     <loc>http://feiyang233.club/post/Master/</loc>
     
     <lastmod>2021-06-20T06:55:24.140Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://feiyang233.club/post/mac/</loc>
-    
-    <lastmod>2021-06-18T13:07:31.258Z</lastmod>
     
   </url>
   
