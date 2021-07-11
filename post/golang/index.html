@@ -113,7 +113,7 @@
 <meta property="og:image" content="http://feiyang233.club/img/misc/gopath.png">
 <meta property="og:image" content="http://feiyang233.club/img/misc/gomodule.png">
 <meta property="article:published_time" content="2019-11-10T18:12:12.000Z">
-<meta property="article:modified_time" content="2021-07-04T14:47:28.224Z">
+<meta property="article:modified_time" content="2021-07-11T15:38:18.043Z">
 <meta property="article:author" content="feiyang">
 <meta property="article:tag" content="go">
 <meta name="twitter:card" content="summary">
@@ -445,7 +445,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2021-07-04 22:47:28" itemprop="dateModified" datetime="2021-07-04T22:47:28+08:00">2021-07-04</time>
+                <time title="Modified: 2021-07-11 23:38:18" itemprop="dateModified" datetime="2021-07-11T23:38:18+08:00">2021-07-11</time>
               
             
           </span>
@@ -608,7 +608,8 @@
 <li>对于使用了 v2+ go module 的项目，项目路径会有个版本号的后缀。比如： &lt;module/v2&gt;+<version> + <hash></li>
 </ul>
 <h3 id="Migration"><a href="#Migration" class="headerlink" title="Migration"></a>Migration</h3><p><a href="https://blog.golang.org/migrating-to-go-modules" target="_blank" rel="noopener">Migrating to Go Modules</a></p>
-<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><h2 id="数组-array"><a href="#数组-array" class="headerlink" title="数组 array"></a>数组 array</h2><p>数组是连续存储在内存中的，每一个切片的底层实现都是绑定着一个数组。当切面的值改变时，底层数组也会跟着改变。当切片的 capacity 增大超过当前数组长度时，go 会自动产生一个新的底层数组，长度为以前的 2 倍，然后再绑定到切片上。当切片 capacity 大于 1000 时，底层数组的增长因子就会有 2 变为 1.25。数组的容量永远等于其长度，都是不可变的。</p>
+<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><p><a href="https://yourbasic.org/golang/three-dots-ellipsis/" target="_blank" rel="noopener">Go 三个点(…)用法</a></p>
+<h2 id="数组-array"><a href="#数组-array" class="headerlink" title="数组 array"></a>数组 array</h2><p>数组是连续存储在内存中的，每一个切片的底层实现都是绑定着一个数组。当切面的值改变时，底层数组也会跟着改变。当切片的 capacity 增大超过当前数组长度时，go 会自动产生一个新的底层数组，长度为以前的 2 倍，然后再绑定到切片上。当切片 capacity 大于 1000 时，底层数组的增长因子就会有 2 变为 1.25。数组的容量永远等于其长度，都是不可变的。</p>
 <h2 id="切片-slice"><a href="#切片-slice" class="headerlink" title="切片 slice"></a>切片 slice</h2><p>Go 语言的切片类型属于引用类型，同属引用类型的还有字典类型、通道类型、函数类型等；而 Go 语言的数组类型则属于值类型，同属值类型的有基础数据类型以及结构体类型。<br>注意，Go 语言里不存在像 Java 等编程语言中令人困惑的“传值或传引用”问题。在 Go 语言中，我们判断所谓的“传值”或者“传引用”只要看被传递的值的类型就好了。<br>如果传递的值是引用类型的，那么就是“传引用”。如果传递的值是值类型的，那么就是“传值”。从传递成本的角度讲，引用类型的值往往要比值类型的值低很多。<br>我们在数组和切片之上都可以应用索引表达式，得到的都会是某个元素。我们在它们之上也都可以应用切片表达式，也都会得到一个新的切片。切片的容量却不是这样，并且它的变化是有规律可寻的。用make函数初始化切片时，如果不指明其容量，那么它就会和长度一致。如果在初始化时指明了容量，那么切片的实际容量也就是它了。 切片代表的窗口是无法向左扩展的。<br>slice := make([]int, len, cap)</p>
 <p>Go 语言经典知识总结<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">基于混合线程的并发编程模型自然不必多说。</span><br><span class="line"></span><br><span class="line">在数据类型方面有：</span><br><span class="line">基于底层数组的切片；</span><br><span class="line">用来传递数据的通道；</span><br><span class="line">作为一等类型的函数；</span><br><span class="line">可实现面向对象的结构体；</span><br><span class="line">能无侵入实现的接口等。</span><br><span class="line"></span><br><span class="line">在语法方面有：</span><br><span class="line">异步编程神器go语句；</span><br><span class="line">函数的最后关卡defer语句；</span><br><span class="line">可做类型判断的switch语句；</span><br><span class="line">多通道操作利器select语句；</span><br><span class="line">非常有特色的异常处理函数panic和recover。</span><br><span class="line"></span><br><span class="line">测试 Go 程序的主要方式。这涉及了 Go 语言自带的程序测试套件，相关的概念和工具包括：</span><br><span class="line">独立的测试源码文件；</span><br><span class="line">三种功用不同的测试函数；</span><br><span class="line">专用的testing代码包；</span><br><span class="line">功能强大的go test命令。</span><br><span class="line"></span><br><span class="line">Go 语言提供的那些同步工具。它们也是 Go 语言并发编程工具箱中不可或缺的一部分。这包括了：</span><br><span class="line">经典的互斥锁；</span><br><span class="line">读写锁；</span><br><span class="line">条件变量；</span><br><span class="line">原子操作。</span><br><span class="line"></span><br><span class="line">以及Go 语言特有的一些数据类型，即：</span><br><span class="line">单次执行小助手sync.Once；</span><br><span class="line">临时对象池sync.Pool；</span><br><span class="line">帮助我们实现多 goroutine 协作流程的sync.WaitGroup、context.Context；</span><br><span class="line">一种高效的并发安全字典sync.Map。</span><br></pre></td></tr></table></figure></p>
 
