@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://feiyang233.club/post/terraform/</loc>
+    
+    <lastmod>2021-07-12T15:28:12.306Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://feiyang233.club/post/golang/</loc>
     
     <lastmod>2021-07-11T15:38:18.043Z</lastmod>
@@ -187,13 +194,6 @@
     <loc>http://feiyang233.club/post/consul/</loc>
     
     <lastmod>2021-05-26T09:27:40.921Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://feiyang233.club/post/terraform/</loc>
-    
-    <lastmod>2021-05-22T01:13:53.947Z</lastmod>
     
   </url>
   
