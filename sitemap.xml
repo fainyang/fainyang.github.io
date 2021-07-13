@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://feiyang233.club/post/gitlab/</loc>
+    
+    <lastmod>2021-07-13T00:51:56.523Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://feiyang233.club/post/terraform/</loc>
     
     <lastmod>2021-07-12T15:28:12.306Z</lastmod>
@@ -79,6 +86,13 @@
   </url>
   
   <url>
+    <loc>http://feiyang233.club/post/algo/</loc>
+    
+    <lastmod>2021-06-27T01:13:04.231Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://feiyang233.club/post/Combination/</loc>
     
     <lastmod>2021-06-27T01:13:04.231Z</lastmod>
@@ -87,13 +101,6 @@
   
   <url>
     <loc>http://feiyang233.club/post/Robot/</loc>
-    
-    <lastmod>2021-06-27T01:13:04.231Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://feiyang233.club/post/algo/</loc>
     
     <lastmod>2021-06-27T01:13:04.231Z</lastmod>
     
@@ -166,13 +173,6 @@
     <loc>http://feiyang233.club/post/dns/</loc>
     
     <lastmod>2021-06-11T01:03:15.869Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://feiyang233.club/post/gitlab/</loc>
-    
-    <lastmod>2021-06-08T01:24:43.446Z</lastmod>
     
   </url>
   
